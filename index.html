@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테트리스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>테트리스</h1>
+      <p class="subtitle">HTML · CSS · JavaScript로 만드는 브라우저 게임</p>
+    </header>
+
+    <main class="game-area">
+      <section class="board-section">
+        <h2 class="section-title">게임 보드</h2>
+        <div id="board" class="board" aria-label="테트리스 게임 보드"></div>
+      </section>
+
+      <aside class="side-panel">
+        <section class="info-box">
+          <h2 class="section-title">점수</h2>
+          <p class="score-value" id="score">0</p>
+          <p id="game-status" class="game-status" aria-live="polite"></p>
+        </section>
+
+        <section class="info-box">
+          <h2 class="section-title">조작</h2>
+          <button type="button" id="start-btn" class="btn btn-primary">시작</button>
+          <button type="button" id="restart-btn" class="btn btn-secondary">재시작</button>
+        </section>
+
+        <section class="info-box controls-guide">
+          <h2 class="section-title">조작법</h2>
+          <ul>
+            <li><kbd>←</kbd> 왼쪽 이동</li>
+            <li><kbd>→</kbd> 오른쪽 이동</li>
+            <li><kbd>↓</kbd> 한 칸 빠르게 내리기</li>
+            <li><kbd>↑</kbd> 블록 회전</li>
+            <li><kbd>Space</kbd> 즉시 낙하 (hard drop)</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p>시작 버튼을 누른 뒤 키보드로 블록을 조작할 수 있습니다.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
